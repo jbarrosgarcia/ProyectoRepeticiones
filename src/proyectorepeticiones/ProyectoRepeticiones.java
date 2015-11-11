@@ -4,10 +4,11 @@ public class ProyectoRepeticiones {
 
     public static void main(String[] args) {
         int i=0;
+         int a=Integer.parseInt(JOptionPane.showInputDialog("Introduzca numero de alumnos"));
             Alumno alumno[];
             alumno=new Alumno[30];
-        while(i<3){
-        String nomeA=JOptionPane.showInputDialog("Introduzca nombre alumno");
+        while(i<a)    {
+        String nomeA=JOptionPane.showInputDialog("Introduzca nombre alumno "+i);
         float nota1=Float.parseFloat(JOptionPane.showInputDialog("Introduzca primera nota"));
         float nota2=Float.parseFloat(JOptionPane.showInputDialog("Introduzca segunda nota"));
         float nota3=Float.parseFloat(JOptionPane.showInputDialog("Introduzca tercera nota"));        
@@ -18,7 +19,7 @@ public class ProyectoRepeticiones {
        
         }
         int x=0;
-        while(x<3){
+        while(x<a){
             JOptionPane.showMessageDialog(null,alumno[x].calcNotaMedia());
             x++;
         }
